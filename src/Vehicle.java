@@ -12,7 +12,7 @@ public class Vehicle extends Dynamic{
         return this.speedLimit;
     }
 
-    double setDesiredSpeed(double speed) {
+    void setDesiredSpeed(double speed) {
         this.desiredSpeed = speed;
     }
 

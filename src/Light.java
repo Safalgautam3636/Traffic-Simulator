@@ -10,6 +10,6 @@ public class Light extends Dynamic{
     }
 
     Color getLightColor() {
-        
+        return this.lit;
     }
 }

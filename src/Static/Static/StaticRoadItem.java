@@ -1,15 +1,19 @@
+package Static;
 import java.util.List;
 
-public class Static extends RoadItem{
+import RoadItems.RoadItem;
+import Shared.Turn;
+
+public class StaticRoadItem extends RoadItem{
     
 }
 
-class StopSign extends Static {
+class StopSign extends StaticRoadItem {
 
 }
 
 
-class Intersection extends Static {
+class Intersection extends StaticRoadItem {
     List<Turn> turns;
 
     void addTurn(Turn turn) {
@@ -25,7 +29,7 @@ class Intersection extends Static {
     }
 }
 
-class SpeedLimit extends Static {
+class SpeedLimit extends StaticRoadItem {
     double speedLimit;
 
     double getSpeedLimit(){
@@ -33,6 +37,6 @@ class SpeedLimit extends Static {
     }
 }
 
-class Yield extends Static {
+class Yield extends StaticRoadItem {
     
 }

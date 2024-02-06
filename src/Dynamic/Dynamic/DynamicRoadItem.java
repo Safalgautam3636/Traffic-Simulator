@@ -1,11 +1,15 @@
-import java.util.*;
 
+package Dynamic;
 
-public abstract class Dynamic extends RoadItem {
+import RoadItems.RoadItem;
+import Shared.*;
+
+public abstract class DynamicRoadItem extends RoadItem {
+    
     abstract void update(int second);
 }
 
-class Light extends Dynamic {
+class Light extends DynamicRoadItem {
     int redTime;
     int yellowTime;
     int greenTime;
@@ -21,7 +25,7 @@ class Light extends Dynamic {
     }
 }
 
-class Vehicle extends Dynamic {
+class Vehicle extends DynamicRoadItem {
     double currentSpeed;
     double desiredSpeed;
     double speedLimit;

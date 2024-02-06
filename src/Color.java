@@ -1,7 +1,6 @@
-public class Color {
-    String color;
-
-    Color(String color) {
-        this.color = color;
-    }
+public  class Color {
+        static final String GREEN = "GREEN";
+        static final String YELLOW = "YELLOW";
+        static final String RED = "RED";
+    
 }

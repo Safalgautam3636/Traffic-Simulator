@@ -13,7 +13,7 @@ class Light extends DynamicRoadItem {
     int redTime;
     int yellowTime;
     int greenTime;
-    Color lit;
+    Color light;
     int timeOn;
 
     void update(int seconds) {
@@ -21,7 +21,7 @@ class Light extends DynamicRoadItem {
     }
 
     Color getLightColor() {
-        return this.lit;
+        return this.light;
     }
 }
 

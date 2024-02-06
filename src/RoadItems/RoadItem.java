@@ -30,7 +30,7 @@ public class RoadItem {
         return this.prevItem;
     }
 
-    void setPrevioud(RoadItem roadItem) {
+    void setPrevious(RoadItem roadItem) {
         this.prevItem = roadItem;
     }
 }

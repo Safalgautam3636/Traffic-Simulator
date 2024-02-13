@@ -19,7 +19,7 @@ public abstract class Vehicle extends DynamicRoadItem {
         // this is when given speed is greater than the current speed
         if (currentSpeed <= speed) {
             //when current speed is greater than the desired speed
-            if (currentSpeed > desiredSpeed) {
+            if (speed > desiredSpeed) {
                 currentSpeed = desiredSpeed;
             } else {
                 currentSpeed = speed;

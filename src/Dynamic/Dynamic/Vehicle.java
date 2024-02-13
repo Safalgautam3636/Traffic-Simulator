@@ -11,7 +11,7 @@ public abstract class Vehicle extends DynamicRoadItem {
     protected abstract void accelerate(int secondsDelta);
     protected abstract void deaccelerate(int secondsDelta);
     public double getCurrentSpeed() {
-        return this.currentSpeed;
+        return currentSpeed;
     }
     
 
@@ -37,18 +37,18 @@ public abstract class Vehicle extends DynamicRoadItem {
     }
 
     public double getSpeedLimit() {
-        return this.speedLimit;
+        return speedLimit;
     }
 
     public void setDesiredSpeed(double speed) {
-        this.desiredSpeed = speed;
+        desiredSpeed = speed;
     }
 
     public void update(int seconds) {
         if (seconds > desiredSpeed) {
             deaccelerate(seconds);
         }
-        else {
+        else if(seconds<desiredSpeed){
             accelerate(seconds);
         }
     }

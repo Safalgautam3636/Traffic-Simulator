@@ -3,7 +3,7 @@ package Dynamic;
 import Shared.*;
 
 public class Truck extends Vehicle {
-    double loadWeight;
+    private double loadWeight;
     Color trailerColor;
 
     public Truck(int loadWeight) {
@@ -17,11 +17,11 @@ public class Truck extends Vehicle {
     @Override
     protected void accelerate(int secondsDelta) {
         if (loadWeight <= 5) {
-            super.setCurrentSpeed(super.getCurrentSpeed() + Constants.AccRateEmpty * secondsDelta * Constants.MpsToMph);
+            setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateEmpty * secondsDelta * Constants.MpsToMph));
         }
             
         else {
-            super.setCurrentSpeed(super.getCurrentSpeed() + Constants.AccRateFull * secondsDelta * Constants.MpsToMph);
+            setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateFull * secondsDelta * Constants.MpsToMph));
         }
                 
     }

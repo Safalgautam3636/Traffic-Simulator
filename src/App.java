@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -6,7 +5,6 @@ import java.util.Scanner;
 import Dynamic.Car;
 import Dynamic.Truck;
 import Dynamic.Vehicle;
-import Shared.*;
 import GUI.*;
 
 public class App {

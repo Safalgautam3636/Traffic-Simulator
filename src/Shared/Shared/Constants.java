@@ -8,4 +8,5 @@ public class Constants {
         public static final double DecRateEmpty = 5.0;     // Braking rate for light trucks in m/s
         public static final double DecRateFull = 2.0;      // Braking rate for light trucks in m/s
         public static final double MpsToMph = 2.237;
+        public static final double MpsToKph = 3.6;
 }

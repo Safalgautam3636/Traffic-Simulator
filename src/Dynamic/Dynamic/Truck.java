@@ -17,11 +17,11 @@ public class Truck extends Vehicle {
     @Override
     protected void accelerate(int secondsDelta) {
         if (loadWeight <= 5) {
-            setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateEmpty * secondsDelta * Constants.MpsToMph));
+            setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateEmpty * secondsDelta));
         }
             
         else {
-            setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateFull * secondsDelta * Constants.MpsToMph));
+            setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateFull * secondsDelta));
         }
                 
     }

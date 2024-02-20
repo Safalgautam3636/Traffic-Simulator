@@ -7,11 +7,11 @@ public class Car extends Vehicle {
 
     @Override
     protected void accelerate(int delta) {
-        setCurrentSpeed(getCurrentSpeed()+(Constants.AccRate * delta * Constants.MpsToMph));
+        setCurrentSpeed(getCurrentSpeed()+(Constants.AccRate * delta));
     }
     @Override
     protected void deaccelerate(int delta) {
-        setCurrentSpeed(getCurrentSpeed() - (Constants.DecRate * delta * Constants.MpsToMph));
+        setCurrentSpeed(getCurrentSpeed() - (Constants.DecRate * delta));
     }
 
     void setModelNumber(String modelNumber) {

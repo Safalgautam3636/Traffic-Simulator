@@ -3,5 +3,5 @@ package Shared;
 import Dynamic.Vehicle;
 
 public interface ISimInput {
-    void setSpeedLimit(Vehicle v, double speed);
+    void SetSpeedLimit(Vehicle v, double speed);
 }

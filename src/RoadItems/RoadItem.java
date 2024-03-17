@@ -10,7 +10,7 @@ public class RoadItem {
         return this.mileMarker;
     }
 
-    Road getCurrentRoad() {
+    public Road getCurrentRoad() {
         return this.currentRoad;
     }
 

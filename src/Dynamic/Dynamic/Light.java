@@ -23,7 +23,7 @@ public class Light extends DynamicRoadItem {
     }
 
     public void update(int seconds) {
-        this.timer += seconds;
+        this.timer += 1;
         int duration = this.redTime + this.greenTime + this.yellowTime;
         this.timer = this.timer % duration;
         if (this.timer <= this.redTime) {
@@ -57,7 +57,7 @@ public class Light extends DynamicRoadItem {
     // }
     // }
     // }
-   
+
     public void printRoadItem(List<DynamicRoadItem> roadItems, CharMatrix charMatrix) {
         // Iterate through each road item
         for (DynamicRoadItem roadItem : roadItems) {
@@ -69,28 +69,30 @@ public class Light extends DynamicRoadItem {
                 System.out.println(symbol);
 
                 int firstTlRowIndex = charMatrix.map.length - 1;
-                 charMatrix.map[firstTlRowIndex][tl.mileMarker] = symbol;
+                charMatrix.map[firstTlRowIndex][tl.mileMarker] = symbol;
                 // Get the position of the traffic light
-                // int row_index = charMatrix.map.length-1; // Assuming traffic light is at the bottom
+                // int row_index = charMatrix.map.length-1; // Assuming traffic light is at the
+                // bottom
                 // int column_index = tl.mileMarker;
-                // Search for the closest '|' character in the column and update it with the symbol
+                // Search for the closest '|' character in the column and update it with the
+                // symbol
                 // for (int i = row_index; i >= 0; i--) {
-                //     if (charMatrix.map[i][column_index] == '|') {
-                //         charMatrix.map[i][column_index] = symbol;
-                //         break;
-                //     }
+                // if (charMatrix.map[i][column_index] == '|') {
+                // charMatrix.map[i][column_index] = symbol;
+                // break;
+                // }
                 // }
             }
         }
     }
-    //     int firstTlRowIndex = charMatrix.map.length - 13;
-        //     // Second traffic light row index should be 13 less than the first one
-        //     int secondTlRowIndex = firstTlRowIndex - 13;
+    // int firstTlRowIndex = charMatrix.map.length - 13;
+    // // Second traffic light row index should be 13 less than the first one
+    // int secondTlRowIndex = firstTlRowIndex - 13;
 
-        //     // Print the first traffic light
-        //     char symbol1 = trafficLights.get(0).currentColor.equals(Color.RED) ? 'X'
-        //             : trafficLights.get(0).currentColor.equals(Color.YELLOW) ? '-' : 'O';
-        //     charMatrix.map[firstTlRowIndex][trafficLights.get(0).mileMarker] = symbol1;
+    // // Print the first traffic light
+    // char symbol1 = trafficLights.get(0).currentColor.equals(Color.RED) ? 'X'
+    // : trafficLights.get(0).currentColor.equals(Color.YELLOW) ? '-' : 'O';
+    // charMatrix.map[firstTlRowIndex][trafficLights.get(0).mileMarker] = symbol1;
 
     private static char getSymbolForColor(String color) {
         switch (color) {

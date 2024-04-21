@@ -1,3 +1,5 @@
 package RoadItems;
 
-public  enum Heading { North, South, East, West }
+public enum Heading {
+    North, South, East, West
+}

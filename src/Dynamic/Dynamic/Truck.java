@@ -22,11 +22,11 @@ public class Truck extends Vehicle {
         if (loadWeight <= 5) {
             setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateEmpty * secondsDelta));
         }
-            
+
         else {
             setCurrentSpeed(getCurrentSpeed() + (Constants.AccRateFull * secondsDelta));
         }
-                
+
     }
 
     @Override

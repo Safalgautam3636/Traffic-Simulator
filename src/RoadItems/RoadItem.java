@@ -5,7 +5,7 @@ public class RoadItem {
     Road currentRoad;
     RoadItem nextItem;
     RoadItem prevItem;
-    
+
     double getMileMarker() {
         return this.mileMarker;
     }
@@ -35,6 +35,6 @@ public class RoadItem {
     }
 
     void printRoadItem(RoadItem roadItem) {
-        
+
     }
 }

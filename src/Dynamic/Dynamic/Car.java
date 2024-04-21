@@ -10,8 +10,9 @@ public class Car extends Vehicle {
 
     @Override
     protected void accelerate(int delta) {
-        setCurrentSpeed(getCurrentSpeed()+(Constants.AccRate * delta));
+        setCurrentSpeed(getCurrentSpeed() + (Constants.AccRate * delta));
     }
+
     @Override
     protected void deaccelerate(int delta) {
         setCurrentSpeed(getCurrentSpeed() - (Constants.DecRate * delta));
@@ -24,6 +25,7 @@ public class Car extends Vehicle {
     String getModelNumber() {
         return this.modelNumber;
     }
+
     @Override
     public void printRoadItem(List<DynamicRoadItem> roadItem, CharMatrix charMat) {
         // TODO Auto-generated method stub

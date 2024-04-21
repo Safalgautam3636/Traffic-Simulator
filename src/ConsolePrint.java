@@ -5,7 +5,7 @@ import RoadItems.*;
 import main.CharMatrix;
 
 public class ConsolePrint implements IPrintDriver {
-    
+
     @Override
     public void PrintRoad(Road road, Object o) {
         CharMatrix cm = (CharMatrix) o;
@@ -14,7 +14,7 @@ public class ConsolePrint implements IPrintDriver {
         int CCy = Conversions.WCpointToCCpoint(-road.GetYLocation());
         int distance = 0;
         int CCRoadLength = Conversions.WClengthToCClength(road.GetLength());
-        
+
         switch (road.GetHeading()) {
             case North:
                 x = (int) CCx;

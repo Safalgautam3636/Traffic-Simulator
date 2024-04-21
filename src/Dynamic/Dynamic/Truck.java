@@ -1,6 +1,9 @@
 package Dynamic;
 
+import java.util.List;
+
 import Shared.*;
+import main.CharMatrix;
 
 public class Truck extends Vehicle {
     private double loadWeight;
@@ -32,5 +35,11 @@ public class Truck extends Vehicle {
             super.setCurrentSpeed(super.getCurrentSpeed() - Constants.DecRateEmpty * secondsDelta * Constants.MpsToMph);
         else
             super.setCurrentSpeed(super.getCurrentSpeed() - Constants.DecRateFull * secondsDelta * Constants.MpsToMph);
+    }
+
+    @Override
+    public void printRoadItem(List<DynamicRoadItem> roadItem, CharMatrix charMat) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'printRoadItem'");
     }
 }

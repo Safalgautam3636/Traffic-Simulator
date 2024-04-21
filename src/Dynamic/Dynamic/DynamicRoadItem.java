@@ -2,8 +2,12 @@
 package Dynamic;
 
 import RoadItems.RoadItem;
+import main.CharMatrix;
+import java.util.*;
 
 public abstract class DynamicRoadItem extends RoadItem {
     
-    abstract void update(int second);
+    public abstract void update(int second);
+
+    public abstract void printRoadItem(List<DynamicRoadItem>roadItem, CharMatrix charMat);
 }

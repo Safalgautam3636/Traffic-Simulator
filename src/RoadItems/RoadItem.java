@@ -33,4 +33,8 @@ public class RoadItem {
     void setPrevious(RoadItem roadItem) {
         this.prevItem = roadItem;
     }
+
+    void printRoadItem(RoadItem roadItem) {
+        
+    }
 }

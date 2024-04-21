@@ -4,13 +4,23 @@ import Dynamic.DynamicRoadItem;
 
 import java.util.*;
 public class Simulation {
-    List<DynamicRoadItem> roadItems;
+    public List<DynamicRoadItem> roadItems;
 
-    void update(int second) {
+    // public Simulation(List<DynamicRoadItem> roadItems) {
+    //     this.roadItems = roadItems;
+    // }
 
+    public void update(int second) {
+        for (DynamicRoadItem item : roadItems) {
+            item.update(1);
+        }
     }
 
-    void addDynamicRoadItem(DynamicRoadItem dynamicRoadItem) {
+    public void addDynamicRoadItem(DynamicRoadItem dynamicRoadItem) {
+        if (roadItems == null) {
+            roadItems = new ArrayList<>();
+        }
         roadItems.add(dynamicRoadItem);
     }
+    
 }

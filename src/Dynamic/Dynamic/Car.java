@@ -1,6 +1,9 @@
 package Dynamic;
 
+import java.util.List;
+
 import Shared.Constants;
+import main.CharMatrix;
 
 public class Car extends Vehicle {
     String modelNumber;
@@ -20,5 +23,10 @@ public class Car extends Vehicle {
 
     String getModelNumber() {
         return this.modelNumber;
+    }
+    @Override
+    public void printRoadItem(List<DynamicRoadItem> roadItem, CharMatrix charMat) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'printRoadItem'");
     }
 }

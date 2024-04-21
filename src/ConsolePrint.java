@@ -2,6 +2,7 @@
 import Shared.*;
 import Dynamic.Car;
 import RoadItems.*;
+import main.CharMatrix;
 
 public class ConsolePrint implements IPrintDriver {
     

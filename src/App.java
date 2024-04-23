@@ -116,7 +116,7 @@ public class App implements ISimInput, ISimOutput {
         }, 0, 1, TimeUnit.SECONDS); // Initial delay 0, run every 1 second
 
         // Shutdown the executor after some time (e.g., after 30 seconds)
-        executor.schedule(() -> executor.shutdown(), 10, TimeUnit.SECONDS);
+        executor.schedule(() -> executor.shutdown(), 30, TimeUnit.SECONDS);
     }
 
     @Override
